@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="main-div">
+        <div id="search-div">
+          <input id="search-input" type="text" />
+          <button id="send-btn" accesskey="i">send</button>
+        </div>
+        <h2 id="search-title">search option</h2>
+      </div>
+      <div id="recieve-div"></div>
+    </main>
+
+    <script>
+      document
+        .getElementById("search-div")
+        .addEventListener("mouseout", function () {
+          let content = document.getElementById("search-input").value;
+          document.getElementById("search-title").innerHTML = content;
+          console.log(content);
+        });
+
+      document
+        .getElementById("send-btn")
+        .addEventListener("click", function () {
+          let content = document.getElementById("search-input").value;
+
+          let h1Element = document.createElement("h2");
+          let h1Content = document.createTextNode(content);
+
+          h1Element.appendChild(h1Content);
+          h1Element.classList.add("hover-red");
+          document.getElementById("recieve-div").appendChild(h1Element);
+        });
+    </script>
+  </body>
+</html>

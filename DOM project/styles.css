@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-div {
+  background-color: rgb(15, 75, 139);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 10rem;
+}
+
+#search-title {
+  margin-top: 3rem;
+  color: white;
+}
+
+#recieve-div {
+  background-color: rgb(246, 255, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-red {
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+.hover-red:hover {
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  background-color: rgb(240, 111, 111);
+}
