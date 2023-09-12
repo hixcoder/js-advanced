@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <h2 id="title">hello world</h2>
+      <input id="title-input" type="text" />
+    </div>
+    <script>
+      document
+        .getElementById("main-div")
+        .addEventListener("click", function () {
+          document.getElementById("title").innerHTML =
+            document.getElementById("title-input").value;
+
+          console.log(
+            "value is: " + document.getElementById("title-input").value
+          );
+        });
+    </script>
+  </body>
+</html>
