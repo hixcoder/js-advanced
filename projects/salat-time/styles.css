@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #405580;
+  --first-color: #4d69a2;
+  --second-color: #6082c5;
+  --shadow-color: #242d3e;
+  --shadow2-color: #47597b92;
+  --shadow3-color: #ffffff;
+}
+
+body {
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  margin: 8rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(13, 12, 25, 0.853);
+  border: solid 0.2rem #ddd8f7fc;
+  box-shadow: 0 0 0.6rem white;
+  width: 55rem;
+  height: fit-content;
+}
+
+#prayers-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.8rem;
+}
+
+#card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem #b6abecfc;
+}
+
+#card-item p {
+  margin: 0.6rem 2rem;
+  font-size: 1.2rem;
+}
+
+#card-item hr {
+  width: 5rem;
+  font-size: 1.2rem;
+}
+
+#choose-city {
+  border-radius: 0.2rem;
+  margin: 2rem auto;
+  width: 70%;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6551c7fc;
+}
+
+#choose-city p {
+  margin: 0rem 1rem;
+  color: white;
+}
+
+#cities {
+  background-color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+#info-container {
+  color: white;
+  text-align: right;
+}
