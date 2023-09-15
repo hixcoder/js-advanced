@@ -1,67 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>مواقيت الصلاة بالمغرب</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div id="main">
       <div id="prayers-container">
-        <div id="cards">
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-          <div id="card-item">
-            <p>الصبح</p>
-            <hr />
-            <p>05:14</p>
-          </div>
-        </div>
+        <div id="cards"></div>
         <div id="choose-city">
-          <select name="cities" id="cities">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
+          <select name="cities" id="cities"></select>
           <p>اختر مدينتك</p>
         </div>
       </div>
       <div id="info-container">
         <h1>مواقيت الصلاة بالمغرب</h1>
         <hr />
-        <p>هجري : 29 صفر 1445هـ</p>
-        <p>ميلادي: 14 سبتمبر 2023 م</p>
-        <p>الوقت : 12:20</p>
+        <div id="infos"></div>
       </div>
     </div>
-    <!-- <script src="api.js"></script>
-    <script src="eventListeners.js"></script> -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="eventListeners.js"></script>
   </body>
 </html>

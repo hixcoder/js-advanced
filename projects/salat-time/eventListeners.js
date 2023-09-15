@@ -1,8 +1,6 @@
-function userClicked(id, element) {
-  readUserPosts(id);
-  let selectedElements = document.getElementsByClassName("selected");
-  for (const element of selectedElements) {
-    element.classList.remove("selected");
-  }
-  element.classList.add("selected");
-}
+let selectElement = document.getElementById("cities");
+selectElement.addEventListener("change", () => {
+  const selectedOption = selectElement.options[selectElement.selectedIndex];
+  console.log(selectedOption.value);
+  readSalatTime(selectedOption.value);
+});

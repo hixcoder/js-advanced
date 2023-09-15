@@ -7,7 +7,12 @@
   --shadow3-color: #ffffff;
 }
 
+@font-face {
+  font-family: "omarfont";
+  src: url(./assets/fonts/omarfont.ttf);
+}
 body {
+  font-family: "omarfont", serif;
   background-image: url("assets/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +30,7 @@ body {
   background-color: rgba(13, 12, 25, 0.853);
   border: solid 0.2rem #ddd8f7fc;
   box-shadow: 0 0 0.6rem white;
-  width: 55rem;
+  width: 50rem;
   height: fit-content;
 }
 
@@ -55,7 +60,11 @@ body {
 
 #card-item p {
   margin: 0.6rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #6551c7fc;
+}
+#card-item p:first-of-type {
+  font-size: 1.5rem;
 }
 
 #card-item hr {
@@ -90,4 +99,15 @@ body {
 #info-container {
   color: white;
   text-align: right;
+}
+
+#info-container hr {
+  color: #b6b6b6fc;
+}
+
+p {
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 2.3rem;
 }
