@@ -12,19 +12,34 @@
     <h2 id="title4" style="visibility: hidden">Title 4</h2>
     <script>
       async function writeTitles() {
-        await setTimeout(() => {
-          document.getElementById("title1").style.visibility = "visible";
-        }, 1000);
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.getElementById("title1").style.visibility = "visible";
+            resolve();
+          }, 1000);
+        });
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.getElementById("title2").style.visibility = "visible";
+            resolve();
+          }, 1000);
+        });
+
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.getElementById("title3").style.visibility = "visible";
+            resolve();
+          }, 1000);
+        });
+
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.getElementById("title4").style.visibility = "visible";
+            resolve();
+          }, 1000);
+        });
+
         console.log("hello");
-        await setTimeout(() => {
-          document.getElementById("title2").style.visibility = "visible";
-        }, 1000);
-        await setTimeout(() => {
-          document.getElementById("title3").style.visibility = "visible";
-        }, 1000);
-        await setTimeout(() => {
-          document.getElementById("title4").style.visibility = "visible";
-        }, 1000);
       }
       writeTitles();
     </script>
