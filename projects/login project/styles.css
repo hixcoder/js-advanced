@@ -1,0 +1,51 @@
+body {
+  background-color: aliceblue;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#login {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 2px black;
+
+  padding: 1rem;
+}
+
+#login hr {
+  width: 22rem;
+}
+
+#login label {
+  margin: 0.3rem 0;
+}
+
+#login label input {
+  margin: 0.4rem 0;
+  border: none;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 90%;
+}
+
+#login button {
+  margin: 0.5rem 0;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+}
+
+#login button:active {
+  background-color: rgb(3, 90, 251);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>login page</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="login">
+        <h1>Login</h1>
+        <hr />
+        <label for="email">
+          email
+          <br />
+          <input id="email" type="email" placeholder="Enter your email" />
+        </label>
+
+        <label for="password">
+          password <br />
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+          />
+        </label>
+        <button id="btn-login">Login</button>
+      </div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="eventListeners.js"></script>
+  </body>
+</html>
