@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/homePage.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
     />
     <title>Social media</title>
   </head>
@@ -15,15 +15,17 @@
       <!-- NAV BAR -->
       <div class="nav">
         <div class="nav-left">
-          <input type="checkbox" id="drawer" />
-          <label for="drawer" class="drawer">
-            <i class="fa-solid fa-bars"></i>
-          </label>
           <a href="#" class="navlink-logo"
             ><span class="letter-blue">H</span>ix<span class="letter-blue"
               >S</span
             >ocial</a
           >
+          <label for="drawer" class="drawer">
+            <i id="drawer-icon" class="fa-solid fa-bars"></i>
+            <input type="checkbox" id="drawer" />
+          </label>
+        </div>
+        <div class="nav-center">
           <a href="#" class="navlink navlink-left">Home</a>
           <a href="#" class="navlink navlink-left">Profile</a>
         </div>
@@ -35,7 +37,83 @@
       <!-- /NAV BAR -->
 
       <!-- POST CARD -->
-      <div class="card"></div>
+      <div class="post">
+        <div class="post-head">
+          <img id="post-publisher-img" src="../assets/bg.png" alt="" />
+          <div class="post-head-info">
+            <h3>publisher name</h3>
+            <p>2min</p>
+          </div>
+        </div>
+        <div class="post-body">
+          <h3>
+            post description post description post description post description
+          </h3>
+          <img id="post-img" src="../assets/bg.png" alt="" />
+        </div>
+        <div class="post-footer">
+          <i class="fa-regular fa-message"></i>
+          <h4>comment</h4>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-head">
+          <img id="post-publisher-img" src="../assets/bg.png" alt="" />
+          <div class="post-head-info">
+            <h3>publisher name</h3>
+            <p>2min</p>
+          </div>
+        </div>
+        <div class="post-body">
+          <h3>
+            post description post description post description post description
+          </h3>
+          <img id="post-img" src="../assets/bg.png" alt="" />
+        </div>
+        <div class="post-footer">
+          <i class="fa-regular fa-message"></i>
+          <h4>comment</h4>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-head">
+          <img id="post-publisher-img" src="../assets/bg.png" alt="" />
+          <div class="post-head-info">
+            <h3>publisher name</h3>
+            <p>2min</p>
+          </div>
+        </div>
+        <div class="post-body">
+          <h3>
+            post description post description post description post description
+          </h3>
+          <img id="post-img" src="../assets/bg.png" alt="" />
+        </div>
+        <div class="post-footer">
+          <i class="fa-regular fa-message"></i>
+          <h4>comment</h4>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-head">
+          <img id="post-publisher-img" src="../assets/bg.png" alt="" />
+          <div class="post-head-info">
+            <h3>publisher name</h3>
+            <p>2min</p>
+          </div>
+        </div>
+        <div class="post-body">
+          <h3>
+            post description post description post description post description
+          </h3>
+          <img id="post-img" src="../assets/bg.png" alt="" />
+        </div>
+        <div class="post-footer">
+          <i class="fa-regular fa-message"></i>
+          <h4>comment</h4>
+        </div>
+      </div>
+
       <!-- /POST CARD -->
     </div>
     <script src="../node_modules/axios/dist/axios.min.js"></script>
